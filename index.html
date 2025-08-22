@@ -377,9 +377,9 @@
 
         <div class="tab-container">
             <div class="tab-navigation">
-                <button class="tab-button active" onclick="switchTab('timeline')">전체 타임라인 안내</button>
-                <button class="tab-button" onclick="switchTab('ceremony')">결혼식 식순</button>
-                <button class="tab-button" onclick="switchTab('faq')">자주 묻는 질문</button>
+                <button class="tab-button active">전체 타임라인 안내</button>
+                <button class="tab-button">결혼식 식순</button>
+                <button class="tab-button">자주 묻는 질문</button>
             </div>
 
             <!-- 전체 타임라인 안내 탭 -->
@@ -440,86 +440,143 @@
 
             <!-- 결혼식 식순 탭 -->
             <div class="tab-content" id="ceremony-content">
-                <h2 style="color: #d63384; margin-bottom: 25px; text-align: center; font-size: 1.8em;">💒 표준 결혼식 식순</h2>
-                <p style="text-align: center; color: #666; margin-bottom: 30px;">아래는 일반적인 결혼식 식순입니다. 신랑신부님의 요청에 따라 자유롭게 조정 가능합니다.</p>
+                <h2 style="color: #d63384; margin-bottom: 25px; text-align: center; font-size: 1.8em;">📖 기본 결혼식 식순</h2>
+                <div style="text-align: center; margin-bottom: 30px; padding: 20px; background: linear-gradient(135deg, #e8f4fd 0%, #f0f8ff 100%); border-radius: 15px; border-left: 4px solid #0ea5e9;">
+                    <p style="color: #0369a1; font-weight: 600; margin-bottom: 8px;">💡 안내사항</p>
+                    <p style="color: #075985; font-size: 0.95em;">아래는 기본 식순이며, <strong style="color: #d63384;">🔸️선택사항</strong>은 신랑신부님의 요청에 따라 추가하거나 제외할 수 있습니다.</p>
+                </div>
                 
                 <div class="ceremony-order">
                     <div class="order-item">
-                        <span class="order-number">1</span>
+                        <span class="order-number" style="background: linear-gradient(135deg, #28a745, #20c997);">1</span>
                         <div style="display: inline-block;">
-                            <div class="order-title">하객 입장 및 착석</div>
-                            <div class="order-description">웨딩마치와 함께 하객분들이 입장하여 착석합니다</div>
+                            <div class="order-title">개식사</div>
+                            <div class="order-description">(사회자 역할) 결혼식 시작을 알리는 인사말</div>
                         </div>
                     </div>
                     
                     <div class="order-item">
-                        <span class="order-number">2</span>
+                        <span class="order-number" style="background: linear-gradient(135deg, #28a745, #20c997);">2</span>
                         <div style="display: inline-block;">
-                            <div class="order-title">개식사 및 인사말</div>
-                            <div class="order-description">사회자 인사 및 결혼식 시작 선언</div>
+                            <div class="order-title">화촉 점화</div>
+                            <div class="order-description">양가 어머님이 불을 밝혀주시고, 맞절과 하객께 인사</div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-item" style="background: #fff3cd; border-left: 4px solid #ffc107;">
+                        <span class="order-number" style="background: linear-gradient(135deg, #ffc107, #fd7e14);">🔸️</span>
+                        <div style="display: inline-block;">
+                            <div class="order-title">식중 영상 <span style="color: #fd7e14; font-size: 0.9em;">(선택사항)</span></div>
+                            <div class="order-description">신랑신부님의 소개 영상을 희망하실 경우 이곳에 배치합니다</div>
                         </div>
                     </div>
                     
                     <div class="order-item">
-                        <span class="order-number">3</span>
+                        <span class="order-number" style="background: linear-gradient(135deg, #28a745, #20c997);">3</span>
                         <div style="display: inline-block;">
                             <div class="order-title">신랑 입장</div>
-                            <div class="order-description">신랑이 양가 어머니와 함께 입장합니다</div>
+                            <div class="order-description">신랑이 단독으로 입장합니다</div>
                         </div>
                     </div>
                     
                     <div class="order-item">
-                        <span class="order-number">4</span>
+                        <span class="order-number" style="background: linear-gradient(135deg, #28a745, #20c997);">4</span>
                         <div style="display: inline-block;">
                             <div class="order-title">신부 입장</div>
-                            <div class="order-description">신부가 아버지와 함께 입장하여 신랑에게 인도됩니다</div>
+                            <div class="order-description">신부가 아버님과 함께 또는 단독으로 입장</div>
                         </div>
                     </div>
                     
                     <div class="order-item">
-                        <span class="order-number">5</span>
+                        <span class="order-number" style="background: linear-gradient(135deg, #28a745, #20c997);">5</span>
                         <div style="display: inline-block;">
-                            <div class="order-title">혼례선언 및 서약</div>
-                            <div class="order-description">결혼 서약 및 반지 교환식</div>
+                            <div class="order-title">신랑·신부 맞절</div>
+                            <div class="order-description">신랑신부가 서로에게 정중히 인사</div>
                         </div>
                     </div>
                     
                     <div class="order-item">
-                        <span class="order-number">6</span>
+                        <span class="order-number" style="background: linear-gradient(135deg, #28a745, #20c997);">6</span>
                         <div style="display: inline-block;">
-                            <div class="order-title">성혼선언 및 키스</div>
-                            <div class="order-description">결혼 성사 선언 및 서로에게 키스</div>
+                            <div class="order-title">혼인서약</div>
+                            <div class="order-description">결혼 서약문 낭독 및 서로에게 약속</div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-item" style="background: #fff3cd; border-left: 4px solid #ffc107;">
+                        <span class="order-number" style="background: linear-gradient(135deg, #ffc107, #fd7e14);">🔸️</span>
+                        <div style="display: inline-block;">
+                            <div class="order-title">예물교환 / 화동 <span style="color: #fd7e14; font-size: 0.9em;">(선택사항)</span></div>
+                            <div class="order-description">반지 교환식 또는 화동이 반지 전달</div>
                         </div>
                     </div>
                     
                     <div class="order-item">
-                        <span class="order-number">7</span>
+                        <span class="order-number" style="background: linear-gradient(135deg, #28a745, #20c997);">7</span>
                         <div style="display: inline-block;">
-                            <div class="order-title">양가 부모님 인사</div>
-                            <div class="order-description">신랑신부가 양가 부모님께 인사드리는 시간</div>
+                            <div class="order-title">성혼선언</div>
+                            <div class="order-description">부모님 또는 사회자가 결혼 성사를 선언</div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-item" style="background: #fff3cd; border-left: 4px solid #ffc107;">
+                        <span class="order-number" style="background: linear-gradient(135deg, #ffc107, #fd7e14);">🔸️</span>
+                        <div style="display: inline-block;">
+                            <div class="order-title">부모님 덕담 <span style="color: #fd7e14; font-size: 0.9em;">(선택사항)</span></div>
+                            <div class="order-description">양가 부모님의 축복과 덕담 말씀</div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-item" style="background: #fff3cd; border-left: 4px solid #ffc107;">
+                        <span class="order-number" style="background: linear-gradient(135deg, #ffc107, #fd7e14);">🔸️</span>
+                        <div style="display: inline-block;">
+                            <div class="order-title">축사/축가/축하무대 <span style="color: #fd7e14; font-size: 0.9em;">(선택사항)</span></div>
+                            <div class="order-description">친구들의 축가나 특별한 축하 공연</div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-item" style="background: #fff3cd; border-left: 4px solid #ffc107;">
+                        <span class="order-number" style="background: linear-gradient(135deg, #ffc107, #fd7e14);">🔸️</span>
+                        <div style="display: inline-block;">
+                            <div class="order-title">식중 영상 <span style="color: #fd7e14; font-size: 0.9em;">(선택사항)</span></div>
+                            <div class="order-description">부모님께 감사드리는 영상 상영</div>
                         </div>
                     </div>
                     
                     <div class="order-item">
-                        <span class="order-number">8</span>
+                        <span class="order-number" style="background: linear-gradient(135deg, #28a745, #20c997);">8</span>
                         <div style="display: inline-block;">
-                            <div class="order-title">축가 또는 축하공연</div>
-                            <div class="order-description">친구들의 축가나 특별한 축하 공연 (선택사항)</div>
+                            <div class="order-title">부모님께 인사, 하객께 인사</div>
+                            <div class="order-description">신랑신부가 양가 부모님과 하객들께 인사</div>
                         </div>
                     </div>
                     
                     <div class="order-item">
-                        <span class="order-number">9</span>
+                        <span class="order-number" style="background: linear-gradient(135deg, #28a745, #20c997);">9</span>
                         <div style="display: inline-block;">
-                            <div class="order-title">기념촬영 및 퇴장</div>
-                            <div class="order-description">단체 기념촬영 후 신랑신부 퇴장</div>
+                            <div class="order-title">행진</div>
+                            <div class="order-description">신랑신부가 함께 퇴장하며 기념촬영</div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-item">
+                        <span class="order-number" style="background: linear-gradient(135deg, #28a745, #20c997);">10</span>
+                        <div style="display: inline-block;">
+                            <div class="order-title">폐식사</div>
+                            <div class="order-description">(사회자 역할) 결혼식 마무리 인사 및 감사 말씀</div>
                         </div>
                     </div>
                 </div>
                 
-                <div style="background: #e8f4fd; padding: 20px; border-radius: 10px; margin-top: 30px; border-left: 4px solid #0ea5e9;">
-                    <p style="color: #0369a1; font-weight: 600; margin-bottom: 8px;">💡 참고사항</p>
-                    <p style="color: #075985; font-size: 0.95em;">위 식순은 표준적인 흐름이며, 신랑신부님의 종교나 문화, 개인적인 선호에 따라 순서를 변경하거나 특별한 의식을 추가할 수 있습니다. 미팅에서 자세히 상담해드리겠습니다.</p>
+                <div style="display: flex; gap: 15px; margin-top: 30px;">
+                    <div style="background: #d4edda; padding: 15px; border-radius: 10px; border-left: 4px solid #28a745; flex: 1;">
+                        <p style="color: #155724; font-weight: 600; margin-bottom: 5px;">✅ 필수 진행</p>
+                        <p style="color: #155724; font-size: 0.9em;">모든 결혼식에서 기본적으로 진행되는 순서입니다.</p>
+                    </div>
+                    <div style="background: #fff3cd; padding: 15px; border-radius: 10px; border-left: 4px solid #ffc107; flex: 1;">
+                        <p style="color: #856404; font-weight: 600; margin-bottom: 5px;">🔸️ 선택사항</p>
+                        <p style="color: #856404; font-size: 0.9em;">신랑신부님의 요청에 따라 추가하거나 제외할 수 있습니다.</p>
+                    </div>
                 </div>
             </div>
 
@@ -624,20 +681,34 @@
     </div>
 
     <script>
-        function switchTab(tabName) {
-            // 모든 탭 버튼 비활성화
-            document.querySelectorAll('.tab-button').forEach(button => {
-                button.classList.remove('active');
-            });
+        // 탭 전환 함수
+        function switchTab(tabName, clickedButton) {
+            // 모든 탭 버튼에서 active 클래스 제거
+            const allButtons = document.querySelectorAll('.tab-button');
+            allButtons.forEach(btn => btn.classList.remove('active'));
             
-            // 모든 탭 컨텐츠 숨기기
-            document.querySelectorAll('.tab-content').forEach(content => {
-                content.classList.remove('active');
-            });
+            // 모든 탭 내용에서 active 클래스 제거
+            const allContents = document.querySelectorAll('.tab-content');
+            allContents.forEach(content => content.classList.remove('active'));
             
-            // 선택된 탭 활성화
-            event.target.classList.add('active');
-            document.getElementById(tabName + '-content').classList.add('active');
+            // 클릭된 버튼에 active 클래스 추가
+            clickedButton.classList.add('active');
+            
+            // 해당 탭 내용에 active 클래스 추가
+            const targetContent = document.getElementById(tabName + '-content');
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
+            
+            // FAQ 탭인 경우 첫 번째 FAQ 자동 열기
+            if (tabName === 'faq') {
+                setTimeout(() => {
+                    const firstFAQ = document.querySelector('#faq-content .faq-question:first-child');
+                    if (firstFAQ && !firstFAQ.classList.contains('active')) {
+                        toggleFAQ(firstFAQ);
+                    }
+                }, 100);
+            }
         }
 
         function toggleFAQ(element) {
@@ -657,10 +728,26 @@
             }
         }
 
-        // 페이지 로드 시 첫 번째 FAQ 열기 (FAQ 탭이 활성화되었을 때만)
+        // 페이지 로드 완료 후 실행
         document.addEventListener('DOMContentLoaded', function() {
-            // 탭 전환 시에도 첫 번째 FAQ가 열리도록 하는 함수
-            function initFAQ() {
-                const faqTab = document.getElementById('faq-content');
-                if (faqTab.classList.contains('active')) {
-                    const firstFAQ = faqTab.querySelector('.f
+            console.log('DOM 로드 완료');
+            
+            // 탭 버튼들 찾기
+            const tabButtons = document.querySelectorAll('.tab-button');
+            console.log('탭 버튼 개수:', tabButtons.length);
+            
+            // 각 탭 버튼에 클릭 이벤트 추가
+            tabButtons.forEach((button, index) => {
+                button.addEventListener('click', function() {
+                    console.log('탭 클릭됨:', index);
+                    const tabNames = ['timeline', 'ceremony', 'faq'];
+                    switchTab(tabNames[index], button);
+                });
+            });
+            
+            // 초기 상태 설정 (첫 번째 탭 활성화)
+            if (tabButtons.length > 0) {
+                switchTab('timeline', tabButtons[0]);
+            }
+        });
+    </script>
